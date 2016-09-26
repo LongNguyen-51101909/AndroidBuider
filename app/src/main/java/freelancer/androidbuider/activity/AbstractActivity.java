@@ -9,7 +9,7 @@ import butterknife.ButterKnife;
 /**
  * Created by nqlong on 21-Sep-16.
  */
-abstract class AbstractActivity extends AppCompatActivity{
+public abstract class AbstractActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/areas_login">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/login_username_text"
+            android:id="@+id/tv_username" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_username"
+            android:id="@+id/et_username"/>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@+id/tv_username"
+            android:text="@string/login_password_text"
+            android:id="@+id/tv_passwork"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_passwork"
+            android:layout_below="@+id/et_username"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/areas_login"
+        android:id="@+id/areas_login_btn"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_text_btn"
+            android:id="@+id/login_btn" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_login_text_btn"
+            android:id="@+id/clear_text_login_btn"
+            android:layout_toRightOf="@+id/login_btn"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
