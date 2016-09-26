@@ -21,11 +21,12 @@ public class LoginActivity extends AbstractActivity {
     public void doLogin() {
         // start main activity , no check business
         Intent intent = new Intent(this, MainActivity.class);
+        /*Android: Clear the back stack*/
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP|
-        Intent.FLAG_ACTIVITY_NO_HISTORY);
+        Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
-
+    /*set content view*/
     @Override
     protected int getLayoutId() {
         return R.layout.login_activity;
