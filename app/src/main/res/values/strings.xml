@@ -4,4 +4,5 @@
     <string name="login_password_text">Password</string>
     <string name="login_text_btn">Login</string>
     <string name="clear_login_text_btn">Clear</string>
+    <string name="clear_login_textn">Clear</string>
 </resources>

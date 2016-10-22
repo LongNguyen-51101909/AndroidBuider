@@ -12,6 +12,9 @@ import freelancer.androidbuider.activity.AbstractActivity;
  * Created by nqlong on 21-Sep-16.
  */
 public class LoginActivity extends AbstractActivity {
+    private static String TAG = LoginActivity.class.getSimpleName();
+    private static final int REQUEST_SIGUP = 0;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
