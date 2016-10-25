@@ -17,6 +17,8 @@
         </activity>
         <!--Main activity-->
         <activity android:name=".activity.implement.MainActivity"></activity>
+        <activity android:name=".activity.implement.ZoomLayoutActivity"></activity>
+        <activity android:name=".activity.implement.ZoomListActivity"></activity>
     </application>
 
 </manifest>

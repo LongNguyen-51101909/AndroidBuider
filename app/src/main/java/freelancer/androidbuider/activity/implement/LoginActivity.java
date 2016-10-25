@@ -15,9 +15,15 @@ public class LoginActivity extends AbstractActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        switch (0) {
+            case 0:
+                break;
+            default:
+                break;
+        }
     }
 
-    @OnClick(R.id.login_btn)
+    @OnClick(R.id.btn_login)
     public void doLogin() {
         // start main activity , no check business
         Intent intent = new Intent(this, MainActivity.class);

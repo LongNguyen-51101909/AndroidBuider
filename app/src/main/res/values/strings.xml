@@ -4,6 +4,7 @@
     <string name="login_password_text">Password</string>
     <string name="login_text_btn">Login</string>
     <string name="clear_login_text_btn">Clear</string>
-    <string name="sd">Clear</string>
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer close</string>
 
 </resources>
